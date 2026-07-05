@@ -579,47 +579,28 @@ function updateActiveNav(id) {
   });
 }
 
-// F. Cinematic Section Scroll Fade-In & Fade-Out Transitions
+// F. Cinematic Section Scroll Fade-In & Fade-Out Transitions (One-time Reveal)
 const allSections = document.querySelectorAll('section');
 allSections.forEach(section => {
   if (section.id === 'home') {
-    gsap.to(section, {
-      opacity: 0.1,
-      ease: 'power2.out',
-      scrollTrigger: {
-        trigger: section,
-        start: 'bottom 85%',
-        end: 'bottom 10%',
-        scrub: true
-      }
-    });
+    // Keep home section fully visible
     return;
   }
 
   gsap.fromTo(section,
-    { opacity: 0.1 },
+    { opacity: 0 },
     {
       opacity: 1,
+      duration: 1.2,
       ease: 'power2.out',
       scrollTrigger: {
         trigger: section,
-        start: 'top 95%',
-        end: 'top 35%',
-        scrub: true
+        start: 'top 85%',
+        toggleActions: 'play none none none',
+        once: true
       }
     }
   );
-
-  gsap.to(section, {
-    opacity: 0.1,
-    ease: 'power2.out',
-    scrollTrigger: {
-      trigger: section,
-      start: 'bottom 65%',
-      end: 'bottom 5%',
-      scrub: true
-    }
-  });
 });
 
 // G. Section Reveal Animation (nested elements stagger)
@@ -644,7 +625,8 @@ if (projectsEl) {
     scrollTrigger: {
       trigger: '#projects',
       start: 'top 75%',
-      toggleActions: 'play none none none'
+      toggleActions: 'play none none none',
+      once: true
     }
   });
 }
@@ -656,7 +638,8 @@ if (aboutEl) {
     scrollTrigger: {
       trigger: '#about',
       start: 'top 75%',
-      toggleActions: 'play none none none'
+      toggleActions: 'play none none none',
+      once: true
     }
   });
 
@@ -697,7 +680,8 @@ if (skillsEl) {
     scrollTrigger: {
       trigger: '#skills',
       start: 'top 75%',
-      toggleActions: 'play none none none'
+      toggleActions: 'play none none none',
+      once: true
     }
   });
 
@@ -731,7 +715,8 @@ if (certsEl) {
     scrollTrigger: {
       trigger: '#certifications',
       start: 'top 75%',
-      toggleActions: 'play none none none'
+      toggleActions: 'play none none none',
+      once: true
     }
   });
 
@@ -761,7 +746,8 @@ if (contactEl) {
     scrollTrigger: {
       trigger: '#contact',
       start: 'top 75%',
-      toggleActions: 'play none none none'
+      toggleActions: 'play none none none',
+      once: true
     }
   });
 
@@ -949,8 +935,9 @@ function initInteractiveSkills() {
 
   // Position nodes geometrically on the circle
   const positionNodes = () => {
+    const isMobile = window.innerWidth <= 768;
     const isTablet = window.innerWidth <= 1024 && window.innerWidth > 768;
-    const radius = isTablet ? 200 : 270; // 35% size increase (200 -> 270)
+    const radius = isMobile ? 145 : (isTablet ? 200 : 270);
 
     desktopNodes.forEach((node, i) => {
       const angleDegrees = (i * 360 / totalSkills);
