@@ -1,0 +1,676 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Meta Tags -->
+  <title>Nishant Jangra — Full Stack Web Developer</title>
+  <meta name="description"
+    content="Portfolio of Nishant Jangra, a premium Full Stack Web Developer building fast, scalable, and high-performance editorial web applications." />
+  <meta name="keywords"
+    content="Nishant Jangra, Full Stack Developer, Web Designer, Portfolio, React, Node.js, GSAP Animations, Creative Developer" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Nishant Jangra — Full Stack Web Developer" />
+  <meta property="og:description"
+    content="Portfolio of Nishant Jangra, a premium Full Stack Web Developer building fast, scalable, and high-performance editorial web applications." />
+  <meta property="og:image" content="/src/assets/hero.png" />
+
+  <!-- Google Fonts: Oswald (Tall Condensed Editorial) and Inter (Premium Body Typography) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@500;600;700;800&family=Syne:wght@700;800&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- Custom Smooth Scroll Container (for Lenis) -->
+  <div id="scroll-wrapper">
+
+    <!-- Navigation Header -->
+    <header class="main-header">
+      <div class="nav-container">
+        <a href="#home" class="logo magnetic-btn" id="logo-nj">NJ<span class="accent-dot">.</span></a>
+        <nav class="nav-links">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#certifications" class="nav-link">Certifications</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <a href="/resume.pdf" download="Nishant_Jangra_Resume.pdf" class="btn-resume-black magnetic-btn" id="resume-btn">
+            <span>DOWNLOAD RESUME</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path
+                d="M12 15V3M12 15L8 11M12 15L16 11M5 17H19C20.1046 17 21 17.8954 21 19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19C3 17.8954 3.89543 17 5 17Z" />
+            </svg>
+          </a>
+        </div>
+        <button class="mobile-menu-toggle" aria-label="Toggle Menu" id="mobile-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Left Vertical Social Bar -->
+    <aside class="social-bar">
+      <div class="social-links-wrapper">
+        <a href="https://github.com/nishantjangra18" target="_blank" rel="noopener noreferrer" class="social-icon magnetic-btn"
+          aria-label="GitHub">
+          <svg class="svg-github" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+            </path>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/nishant-jangra-155765339" target="_blank" rel="noopener noreferrer" class="social-icon magnetic-btn"
+          aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/iam.nishantjangra" target="_blank" rel="noopener noreferrer" class="social-icon magnetic-btn"
+          aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg>
+        </a>
+        <a href="https://www.youtube.com/@NJCrickets" target="_blank" rel="noopener noreferrer" class="social-icon magnetic-btn"
+          aria-label="YouTube">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path
+              d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z">
+            </path>
+            <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+          </svg>
+        </a>
+      </div>
+    </aside>
+
+    <!-- Main Layout -->
+    <main>
+
+      <!-- 1. Hero Section (Red Editorial Theme) -->
+      <section id="home" class="hero-section hero-red">
+
+        <!-- Layer 1: Giant Backdrop Typography (z-index: 1) -->
+        <div class="hero-bg-title-row" aria-hidden="true">
+          <div class="hero-title-wrapper-left">
+            <span class="hero-tagline-editorial">FULL STACK WEB DEVELOPER</span>
+            <h1 class="hero-title-part" id="hero-title-nishant">NISHANT</h1>
+          </div>
+          <h1 class="hero-title-part" id="hero-title-jangra">JANGRA</h1>
+        </div>
+
+        <!-- Layer 2: Center Image Cutout (z-index: 5) -->
+        <div class="hero-center-wrapper">
+          <div class="hero-watermark" aria-hidden="true" id="hero-watermark-text">NISHANT JANGRA</div>
+          <img src="/src/assets/hero.png" alt="Nishant Jangra" class="hero-img-red" id="hero-img" />
+        </div>
+
+        <!-- Layer 3: Foreground Interactive Elements (z-index: 10) -->
+        <div class="hero-foreground-content-wrapper">
+
+          <!-- Description & Actions (Bottom Left) -->
+          <div class="hero-left-details">
+            <p class="hero-desc">
+              I build fast, modern and scalable web applications that create real impact.
+            </p>
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-black-fill magnetic-btn" id="hero-view-work">
+                <span>VIEW MY WORK</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </a>
+              <a href="#contact" class="btn-text-link magnetic-btn" id="hero-get-in-touch">
+                <span>GET IN TOUCH</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Editorial Quote (Bottom Right) -->
+          <div class="hero-right-details">
+            <div class="hero-editorial-quote">
+              <p>BUILDING DIGITAL EXPERIENCES THAT MATTER.</p>
+              <div class="quote-line"></div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Minimal Scroll Indicator (Bottom Right) -->
+        <div class="scroll-indicator-right" aria-hidden="true">
+          <span class="scroll-label-right font-secondary">SCROLL DOWN</span>
+          <div class="scroll-line-horizontal"></div>
+        </div>
+      </section>
+
+      <!-- 2. Projects Section (Curated Stack & Ordered Setup) -->
+      <section id="projects" class="projects-section">
+        <div class="projects-layout-container">
+
+          <!-- Sticky Left Column (35%) -->
+          <div class="projects-intro-col">
+            <span class="section-tag font-secondary">FEATURED WORK</span>
+            <h2 class="editorial-title scroll-reveal-text">PROJECTS<span class="accent-dot">.</span></h2>
+            <p class="projects-intro-desc">
+              Curated selection of my core web platforms. Each project solves a specific business requirement with
+              minimalist clean design and high-performance software.
+            </p>
+            <a href="#contact" class="btn-text-link inline-btn magnetic-btn">
+              <span>VIEW ALL PROJECTS</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Right Column (65%) - Curated Vertical Projects List -->
+          <div class="projects-cards-list">
+
+            <!-- 1. TASKPILOT -->
+            <div class="project-vertical-card reveal-card">
+              <div class="card-img-wrapper">
+                <img src="/src/assets/taskpilot.png" alt="TASKPILOT Homepage Screenshot" class="project-screenshot" />
+              </div>
+              <div class="card-meta">
+                <div class="card-header-row">
+                  <h3 class="card-title">TASKPILOT</h3>
+                  <span class="card-num font-secondary">01</span>
+                </div>
+                <p class="card-desc">
+                  A premium, minimalist project and task manager built for design agencies to track workflows.
+                </p>
+                <div class="card-tech-row">
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">Tailwind CSS</span>
+                  <span class="tech-tag">Node.js</span>
+                  <span class="tech-tag">MongoDB</span>
+                </div>
+                <div class="card-footer-row">
+                  <a href="#" class="btn-card-arrow">
+                    <span>EXPLORE PROJECT</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <line x1="7" y1="17" x2="17" y2="7"></line>
+                      <polyline points="7 7 17 7 17 17"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2. ANNSEVA -->
+            <div class="project-vertical-card reveal-card">
+              <a href="https://ann-seva-beta.vercel.app" target="_blank" rel="noopener noreferrer" class="card-img-wrapper">
+                <img src="/src/assets/annseva.png" alt="ANNSEVA Homepage Screenshot" class="project-screenshot" />
+              </a>
+              <div class="card-meta">
+                <div class="card-header-row">
+                  <h3 class="card-title">ANNSEVA</h3>
+                  <span class="card-num font-secondary">02</span>
+                </div>
+                <p class="card-desc">
+                  NGO platform streamlining donation logistics and community food distributions.
+                </p>
+                <div class="card-tech-row">
+                  <span class="tech-tag">Node.js</span>
+                  <span class="tech-tag">Express</span>
+                  <span class="tech-tag">MongoDB</span>
+                  <span class="tech-tag">EJS</span>
+                </div>
+                <div class="card-footer-row">
+                  <a href="https://ann-seva-beta.vercel.app" target="_blank" rel="noopener noreferrer" class="btn-card-arrow">
+                    <span>EXPLORE PROJECT</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <line x1="7" y1="17" x2="17" y2="7"></line>
+                      <polyline points="7 7 17 7 17 17"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3. SURTAAL -->
+            <div class="project-vertical-card reveal-card">
+              <a href="https://surtaal-premium.vercel.app" target="_blank" rel="noopener noreferrer" class="card-img-wrapper">
+                <img src="/src/assets/surtaal.png" alt="SURTAAL Homepage Screenshot" class="project-screenshot" />
+              </a>
+              <div class="card-meta">
+                <div class="card-header-row">
+                  <h3 class="card-title">SURTAAL</h3>
+                  <span class="card-num font-secondary">03</span>
+                </div>
+                <p class="card-desc">
+                  A high-fidelity web music player with customized equalizer and visualization.
+                </p>
+                <div class="card-tech-row">
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">Web Audio API</span>
+                  <span class="tech-tag">GSAP</span>
+                </div>
+                <div class="card-footer-row">
+                  <a href="https://surtaal-premium.vercel.app" target="_blank" rel="noopener noreferrer" class="btn-card-arrow">
+                    <span>EXPLORE PROJECT</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <line x1="7" y1="17" x2="17" y2="7"></line>
+                      <polyline points="7 7 17 7 17 17"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- 4. NJ SPORTS -->
+            <div class="project-vertical-card reveal-card">
+              <div class="card-img-wrapper">
+                <img src="/src/assets/njsports.png" alt="NJ SPORTS Homepage Screenshot" class="project-screenshot" />
+              </div>
+              <div class="card-meta">
+                <div class="card-header-row">
+                  <h3 class="card-title">NJ SPORTS</h3>
+                  <span class="card-num font-secondary">04</span>
+                </div>
+                <p class="card-desc">
+                  Premium sports campaign and video hub featuring live event highlights.
+                </p>
+                <div class="card-tech-row">
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">Vite</span>
+                  <span class="tech-tag">Tailwind CSS</span>
+                  <span class="tech-tag">Firebase</span>
+                </div>
+                <div class="card-footer-row">
+                  <a href="#" class="btn-card-arrow">
+                    <span>EXPLORE PROJECT</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <line x1="7" y1="17" x2="17" y2="7"></line>
+                      <polyline points="7 7 17 7 17 17"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+      <!-- 4. About Section -->
+      <section id="about" class="about-section">
+        <div class="container">
+          <div class="about-layout-container">
+
+            <!-- Left Column (48% - Editorial text, unmodified layout) -->
+            <div class="about-desc-col">
+              <span class="section-tag font-secondary">ABOUT ME</span>
+              <h2 class="about-headline scroll-reveal-text">
+                DESIGN. DEVELOP. DELIVER.
+              </h2>
+              <p class="about-paragraph">
+                I'm Nishant Jangra, a Full Stack Web Developer passionate about building modern, fast and user-focused
+                web applications.
+
+                I enjoy turning ideas into polished digital products using React, Node.js, Express and MongoDB. From NGO
+                management platforms and music streaming websites to sports streaming platforms and productivity tools,
+                I love creating projects that solve real-world problems with clean UI and scalable architecture.
+
+                Beyond development, I run a growing YouTube channel where I create technology and gaming content,
+                constantly learning, building and sharing my journey.
+              </p>
+            </div>
+
+            <!-- Right Column (52% - Professional Portrait Showcase) -->
+            <div class="about-showcase-col">
+
+              <div class="about-backdrop-text-left" aria-hidden="true">NISHANT</div>
+              <div class="about-backdrop-text-right" aria-hidden="true">JANGRA</div>
+
+              <!-- Ambient Red Glow Orb -->
+              <div class="about-glow-orb"></div>
+
+              <!-- Portrait Image Container -->
+              <div class="about-portrait-container">
+                <img src="/src/assets/about-profile.png" alt="Nishant Jangra" class="about-portrait-img"
+                  id="about-portrait" />
+                <!-- Soft shadow element under portrait -->
+                <div class="about-portrait-shadow"></div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. Skills Section (Interactive Circular Wheel Redesign) -->
+      <section id="skills" class="skills-section">
+        <div class="skills-layout-container">
+
+          <!-- Left Column (40% - Editorial Info) -->
+          <div class="skills-intro-col">
+            <span class="section-tag font-secondary">EXPERTISE</span>
+            <h2 class="editorial-title scroll-reveal-text">SKILLS<span class="accent-dot">.</span></h2>
+            <p class="skills-intro-desc">
+              A modern engineering stack focused on clean architecture, high-performance user interfaces, scalable API
+              integrations, and premium motion dynamics. I select tools that deliver editorial visual aesthetics and
+              robust system reliability.
+            </p>
+            <a href="https://github.com/nishantjangra18" target="_blank" rel="noopener noreferrer"
+              class="btn-text-link inline-btn magnetic-btn">
+              <span>VIEW GITHUB</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Right Column (60% - Interactive Circular Wheel & Mobile Carousel) -->
+          <div class="skills-interactive-col">
+
+            <!-- Mobile Swipe Navigation (hidden on desktop/tablet) -->
+            <div class="skills-mobile-nav-wrapper">
+              <div class="skills-mobile-nav">
+                <!-- Generated dynamically in main.js -->
+              </div>
+            </div>
+
+            <!-- Skills Wheel Wrapper (desktop/tablet circular track) -->
+            <div class="skills-wheel-wrapper">
+
+              <!-- Central Detail Card (Shared for Desktop & Mobile layout) -->
+              <div class="skills-wheel-center">
+                <div class="skills-center-inner">
+                  <div class="center-logo-wrapper">
+                    <!-- SVG icon injected here -->
+                  </div>
+                  <h3 class="center-skill-name"></h3>
+                  <p class="center-skill-desc"></p>
+                  <div class="center-skill-tags">
+                    <!-- Related tech tags row -->
+                  </div>
+                </div>
+              </div>
+
+              <!-- Rotating Wheel Track & Node Buttons -->
+              <div class="skills-wheel-ring">
+                <!-- Skill nodes generated dynamically in main.js -->
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 6. Certifications Section -->
+      <section id="certifications" class="certifications-section">
+        <div class="container">
+          <div class="certifications-layout-container">
+
+            <!-- Sticky Left Column (38%) -->
+            <div class="certifications-intro-col">
+              <span class="section-tag font-secondary">ACHIEVEMENTS</span>
+              <h2 class="editorial-title scroll-reveal-text">CERTIFICATIONS<span class="accent-dot">.</span></h2>
+              <p class="certifications-intro-desc">
+                I believe learning never stops. These certifications represent my commitment to continuously improving my skills in full stack development, software engineering and modern web technologies.
+              </p>
+              <a href="https://github.com/nishantjangra18" target="_blank" rel="noopener noreferrer" class="btn-text-link inline-btn magnetic-btn" id="view-all-certs-link">
+                <span>VIEW ALL CERTIFICATES</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </a>
+            </div>
+
+            <!-- Right Column (62%) - Certifications Stack -->
+            <div class="certifications-cards-col">
+              <div class="certificates-list" id="certificates-list-container">
+                <!-- Rendered dynamically by main.js -->
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. Contact Section -->
+      <section id="contact" class="contact-section">
+        <!-- Background Huge Typography "CONTACT" -->
+        <div class="contact-backdrop-text" aria-hidden="true">CONTACT</div>
+
+        <!-- Subtle red radial glow behind contact card -->
+        <div class="contact-bg-glow"></div>
+
+        <div class="container">
+          <div class="contact-grid">
+
+            <!-- LEFT SIDE: Text and Actions -->
+            <div class="contact-left-col">
+              <span class="section-tag font-secondary">COLLABORATION</span>
+
+              <h2 class="contact-headline">
+                <span class="contact-headline-line">LET'S BUILD</span>
+                <span class="contact-headline-line">SOMETHING GREAT<span class="accent-dot">.</span></span>
+              </h2>
+
+              <p class="contact-description">
+                I'm always open to internships, freelance work, collaborations and exciting web projects. Let's create
+                something impactful together.
+              </p>
+
+              <div class="contact-actions">
+                <a href="mailto:nishantjangra2024@gmail.com" class="btn btn-black-fill magnetic-btn" id="contact-send-msg">
+                  <span>SEND MESSAGE</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
+
+                <a href="/resume.pdf" download="Nishant_Jangra_Resume.pdf" class="btn btn-black-fill magnetic-btn" id="contact-download-resume">
+                  <span>DOWNLOAD RESUME</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
+              </div>
+
+              <!-- Social Links Below Actions -->
+              <div class="contact-socials-wrapper contact-left-socials">
+                <span class="contact-socials-title font-secondary">FIND ME ON</span>
+                <div class="contact-social-icons">
+                  <a href="https://github.com/nishantjangra18" target="_blank" rel="noopener noreferrer"
+                    class="contact-social-icon magnetic-btn" aria-label="GitHub">
+                    <svg class="svg-github" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <path
+                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                      </path>
+                    </svg>
+                  </a>
+                  <a href="https://www.linkedin.com/in/nishant-jangra-155765339" target="_blank" rel="noopener noreferrer"
+                    class="contact-social-icon magnetic-btn" aria-label="LinkedIn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                      <rect x="2" y="9" width="4" height="12"></rect>
+                      <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                  </a>
+                  <a href="https://www.youtube.com/@NJCrickets" target="_blank" rel="noopener noreferrer"
+                    class="contact-social-icon magnetic-btn" aria-label="YouTube">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <path
+                        d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z">
+                      </path>
+                      <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+                    </svg>
+                  </a>
+                  <a href="https://www.instagram.com/iam.nishantjangra" target="_blank" rel="noopener noreferrer"
+                    class="contact-social-icon magnetic-btn" aria-label="Instagram">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- RIGHT SIDE: Contact Details Card & Socials -->
+            <div class="contact-right-col">
+              <!-- Floating Glassmorphism Contact Card -->
+              <div class="contact-glass-card">
+                <div class="contact-card-item">
+                  <span class="contact-card-label font-secondary">EMAIL</span>
+                  <a href="mailto:nishantjangra2024@gmail.com"
+                    class="contact-card-value font-editorial">nishantjangra2024@gmail.com</a>
+                </div>
+
+                <div class="contact-card-item">
+                  <span class="contact-card-label font-secondary">PHONE</span>
+                  <a href="tel:+919876543210" class="contact-card-value font-editorial">+91 9910466488</a>
+                </div>
+
+                <div class="contact-card-item">
+                  <span class="contact-card-label font-secondary">LOCATION</span>
+                  <span class="contact-card-value">India (Available Worldwide)</span>
+                </div>
+
+                <div class="contact-card-row">
+                  <div class="contact-card-item half">
+                    <span class="contact-card-label font-secondary">AVAILABILITY</span>
+                    <span class="contact-card-value badge-green"><span class="badge-dot"></span>Available for
+                      Work</span>
+                  </div>
+
+                  <div class="contact-card-item half">
+                    <span class="contact-card-label font-secondary">RESPONSE TIME</span>
+                    <span class="contact-card-value">Within 24 Hours</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+      <div class="container footer-content">
+        <p class="copyright font-secondary">
+          &copy; 2026 Nishant Jangra. All rights reserved.
+        </p>
+        <p class="credits font-secondary">
+          Inspired by sports campaign aesthetics.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Certifications Modal -->
+    <div id="certifications-modal" class="cert-modal" aria-hidden="true">
+      <div class="cert-modal-overlay"></div>
+      <div class="cert-modal-container">
+        <button class="cert-modal-close" id="cert-modal-close-btn" aria-label="Close modal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+        <div class="cert-modal-header">
+          <span class="cert-modal-issuer font-secondary" id="modal-track-issuer">ISSUER</span>
+          <h3 class="cert-modal-title" id="modal-track-title">TRACK TITLE</h3>
+        </div>
+        <div class="cert-modal-body">
+          <div class="cert-modal-grid" id="cert-modal-grid-container">
+            <!-- Dynamically populated certificate cards -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fullscreen Lightbox Modal -->
+    <div id="lightbox-modal" class="lightbox-modal" aria-hidden="true">
+      <div class="lightbox-overlay"></div>
+      <div class="lightbox-container">
+        <button class="lightbox-close" id="lightbox-close-btn" aria-label="Close Lightbox">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+        <div class="lightbox-content" id="lightbox-content-viewer">
+          <!-- Image or PDF viewer injected dynamically -->
+        </div>
+        <div class="lightbox-actions">
+          <a href="#" download id="lightbox-download-btn" class="btn btn-black-fill lightbox-btn">
+            <span>DOWNLOAD CERTIFICATE</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 14px; height: 14px; margin-left: 8px;">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer" id="lightbox-fullsize-btn" class="btn btn-black-fill lightbox-btn">
+            <span>OPEN FULL SIZE ↗</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Main JavaScript Modules -->
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
