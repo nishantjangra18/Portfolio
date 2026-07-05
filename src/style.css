@@ -2313,8 +2313,25 @@ a.contact-card-value:hover {
     justify-content: center;
   }
 
+  .contact-right-col {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+    box-sizing: border-box !important;
+  }
+
   .contact-glass-card {
-    padding: var(--space-md);
+    position: relative !important;
+    max-width: 320px !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+    padding: 20px !important;
+    left: auto !important;
+    right: auto !important;
+    transform: none !important;
+    box-sizing: border-box !important;
   }
 
   .contact-socials-wrapper {
@@ -2326,9 +2343,7 @@ a.contact-card-value:hover {
     flex-direction: column;
     gap: var(--space-xs);
     text-align: center;
-  }
-
-  /* Skills section mobile layout adjustments */
+  }  /* Skills section mobile layout adjustments */
   .skills-section {
     overflow-x: hidden !important;
     min-width: 0 !important;
@@ -2372,29 +2387,35 @@ a.contact-card-value:hover {
     text-align: center !important;
   }
 
+  .skills-intro-col .btn-text-link {
+    display: none !important; /* Hide VIEW GITHUB button on mobile */
+  }
+
   .skills-mobile-nav-wrapper {
     display: none !important; /* disable mobile swipe nav */
   }
 
   .skills-interactive-col {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
     width: 100% !important;
     max-width: 100% !important;
     box-sizing: border-box !important;
     overflow: visible !important; /* Prevent clipping */
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
     margin: 0 auto !important;
   }
 
   .skills-wheel-wrapper {
-    width: 350px !important;
-    height: 350px !important;
+    position: relative !important;
+    width: 300px !important;
+    height: 300px !important;
+    margin: 0 auto !important;
+    left: auto !important; /* Center using parent flexbox, no left offsets */
+    transform: none !important; /* Center using parent flexbox, no translation offsets */
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-    position: relative !important;
-    margin: 0 auto !important;
     box-sizing: border-box !important;
     overflow: visible !important; /* overflow: visible to prevent clipping */
   }
@@ -2441,9 +2462,9 @@ a.contact-card-value:hover {
 
   .skills-wheel-center {
     position: absolute !important;
-    top: 50% !important;
     left: 50% !important;
-    transform: translate(-50%, -50%) !important; /* Perfect centering */
+    top: 50% !important;
+    transform: translate(-50%, -50%) !important; /* Perfect absolute centering */
     width: 140px !important; /* Card size width: 135px–150px */
     height: 140px !important; /* Card size height: 135px–150px */
     min-height: 140px !important;
@@ -2527,17 +2548,55 @@ a.contact-card-value:hover {
   }
 
   /* Certifications section mobile layout adjustments */
+  .certifications-layout-container {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 40px !important;
+    padding: 0 20px !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .certifications-intro-col {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .certifications-intro-desc {
+    text-align: center !important;
+    margin: var(--space-sm) auto var(--space-md) auto !important;
+    max-width: 100% !important;
+  }
+
+  .certifications-intro-col .btn-text-link {
+    margin: 0 auto !important;
+  }
+
+  .certifications-cards-col {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
   .certificate-card {
-    flex-direction: column;
-    align-items: stretch;
-    max-width: 480px;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    max-width: 480px !important;
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 
   .cert-img-wrapper {
-    width: 100%;
-    min-width: auto;
-    border-right: none;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    width: 100% !important;
+    min-width: auto !important;
+    border-right: none !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
   }
 
   /* Modal mobile adjustments */
